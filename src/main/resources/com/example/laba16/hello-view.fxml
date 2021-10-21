@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba16.Controller">
+   <children>
+      <AnchorPane fx:id="help_bt" layoutY="26.0" prefHeight="374.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA;" AnchorPane.rightAnchor="0.0">
+         <children>
+            <MenuBar fx:id="exit_btn" layoutY="-12.0" prefHeight="22.0" prefWidth="700.0">
+              <menus>
+                  <Menu mnemonicParsing="false" text="Файл">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#CreateFile" text="Создать" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Работа с файлами ">
+                  <items>
+                        <Menu mnemonicParsing="false" text="TXT">
+                          <items>
+                            <MenuItem fx:id="txt_input_btn" mnemonicParsing="false" onAction="#switchToTxt" text="Открыть файл" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Word">
+                           <items>
+                              <MenuItem fx:id="input_word_btn" mnemonicParsing="false" onAction="#switchToWord" text="Открыть файл" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Excel">
+                           <items>
+                              <MenuItem fx:id="input_xl_btn" mnemonicParsing="false" onAction="#switchToExel" text="Открыть файл" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="CSV">
+                           <items>
+                              <MenuItem fx:id="input_csv_btn" mnemonicParsing="false" onAction="#switchToCSV" text="Открыть файл" />
+                           </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Просмотр отчетов">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Отчет1" />
+                        <MenuItem mnemonicParsing="false" text="Отчет2" />
+                        <MenuItem mnemonicParsing="false" text="Отчет3" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Настройки" />
+                  <Menu mnemonicParsing="false" text="Выход">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <TextArea fx:id="textarea" layoutX="9.0" layoutY="20.0" prefHeight="44.0" prefWidth="683.0" />
+         </children>
+      </AnchorPane>
+
+
+   </children>
+</AnchorPane>
